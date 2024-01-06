@@ -1,3 +1,4 @@
+from math import prod
 import os
 from  pathlib import Path
 import re
@@ -32,3 +33,26 @@ for line in contents:
 
 print(f"Part 1: {sum(games)}")
 
+# part 2
+power = 0
+
+for line in contents:
+    game, values = line.split(':', 1)
+    game = int(re.search(r'[\d]+', game).group())
+    valid = True
+
+    colours = {
+        'red': 0,
+        'green': 0,
+        'blue': 0
+    }
+
+    for subset in values.split(';'):
+        for colour in colours.keys():
+            value = int(re.sub(r'[^0-9]', '', re.search(rf'\d+ {colour}|$', subset).group()) or 0)
+            if value > colours.get(colour):
+                colours[colour] = value
+
+    power += prod([x for x in colours.values() if x])
+
+print(f"Part 2: {power}")
