@@ -17,6 +17,6 @@ total = sum([abs(l - r) for l, r in zip(sorted(all_left), sorted(all_right))])
 
 print(f"pt. 1 answer: {total}")
 
-similarity = sum([(all_right.count(i) * int(i)) for i in all_left])
+similarity = sum([(all_right.count(i) * i) for i in all_left])
 
 print(f"pt. 2 answer: {similarity}")
