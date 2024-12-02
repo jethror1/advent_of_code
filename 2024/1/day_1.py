@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-# expect input file in same dir
+# expect input.txt file in same dir
 input_file = Path(__file__).resolve().parent.joinpath("input.txt")
 
 all_left = []
