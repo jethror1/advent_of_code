@@ -1,3 +1,10 @@
+"""
+Day 2 - tldr;
+
+Pt. 1 - Find all lines where next value in the line is 1 => and <= 3
+Pt. 2 -
+"""
+
 import os
 from pathlib import Path
 

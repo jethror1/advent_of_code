@@ -1,3 +1,10 @@
+"""
+Day 1 - tldr
+
+Pt. 1 - Find the summed pairwise diff of 2 lists
+Pt. 2 - Find the summed count of left items in right multiplied by the item value
+"""
+
 import os
 from pathlib import Path
 
