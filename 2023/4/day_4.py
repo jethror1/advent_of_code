@@ -6,6 +6,7 @@ with open(sys.argv[1]) as fh:
 
 total = 0
 
+# pt 1
 for line in contents:
     winning, selected = line.split("|")
     winning = set(re.findall(r"\d+", winning.split(":")[1]))
@@ -18,5 +19,3 @@ for line in contents:
         total += 1
     else:
         total += 2 ** (won - 1)
-
-print(total)
