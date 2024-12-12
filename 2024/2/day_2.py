@@ -2,7 +2,7 @@
 Day 2 - tldr;
 
 Pt. 1 - Find total lines where adjacent value in the line is 1 => and <= 3
-Pt. 2 -
+Pt. 2 - Same as above, but allow one number to be removed to make it valid
 """
 
 import os
